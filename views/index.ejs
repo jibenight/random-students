@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Binômes d'étudiants</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2%;
+      }
+      li {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Binômes d'étudiants</h1>
+    <ul>
+      <% for(let i = 0; i < pairs.length; i++) { %>
+      <li><%= pairs[i].join(' et ') %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
