@@ -51,10 +51,10 @@ const createPairs = arr => {
 // Gestion de la requête GET sur la route racine ('/')
 app.get('/', (req, res) => {
   // Création des binômes
-  const pairs = createPairs(entiers);
+  const pairs = createPairs(students);
 
   // Rendu de la vue 'index' en passant les binômes à la vue
-  res.render('index', { pairs: pairs });
+  res.render('index', { pairs });
 });
 
 // Démarrage du serveur sur le port 3000
