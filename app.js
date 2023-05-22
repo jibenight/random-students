@@ -42,7 +42,7 @@ const createPairs = arr => {
   if (arr.length % 2 !== 0) {
     let lastStudent = pairs.pop(); // Récupérer le dernier "binôme", qui est en fait un élément unique
     let randomPair = pairs[Math.floor(Math.random() * pairs.length)]; // Choisir un pair aléatoire
-    randomPair.push(...lastStudent); // Ajouter l'étudiant restant au pair aléatoire
+    randomPair.push(lastStudent); // Ajouter l'étudiant restant au pair aléatoire
   }
 
   return pairs;
